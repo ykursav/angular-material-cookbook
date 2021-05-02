@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h1>Recipe Book</h1>
+      <span class="menu-spacer"></span>
+    <button mat-button  href="#">Shopping List</button>
+    <button mat-button href="#">Recipes</button>
+    <span class="example-spacer"></span>
+    <button mat-button href="#" [matMenuTriggerFor]="mngMenu">Manage
+        <mat-icon>more_vert</mat-icon></button>
+    <mat-menu #mngMenu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+    </mat-menu>
+
+    </mat-toolbar-row>
+  </mat-toolbar>
