@@ -1,1 +1,15 @@
-<p>recipe-details works!</p>
+<mat-card>
+    <img mat-card-image src="http://turkeysforlife.com/wp-content/uploads/2010/10/turkish-musakka-recipe-easy.jpg" alt="">
+    <mat-card-title>Recipe name</mat-card-title>
+    <button mat-raised-button color="accent" href="#" [matMenuTriggerFor]="mngMenu">Manage
+        <mat-icon>more_vert</mat-icon></button>
+    <mat-menu #mngMenu="matMenu">
+        <button mat-menu-item>To Shopping List</button>
+        <button mat-menu-item>Edit Recipe</button>
+        <button mat-menu-item>Delete Recipe</button>
+    </mat-menu>
+
+    <mat-card-content>description</mat-card-content>
+    <mat-card-content>ingredients</mat-card-content>
+
+</mat-card>

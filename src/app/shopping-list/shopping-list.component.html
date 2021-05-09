@@ -1,7 +1,12 @@
-<div class="row">
-    <hr>
-    <mat-grid-list cols=2 rowHeight="2:1">
-        <mat-grid-tile>List</mat-grid-tile>
-        <mat-grid-tile><app-shopping-edit></app-shopping-edit></mat-grid-tile>
-    </mat-grid-list>
+<div fxLayout="row" fxLayoutAlign="center start" fxFlex=100 fxLayoutGap="2em">
+    <mat-selection-list [multiple]="false" #shoppingList fxFlex="40">
+        <h3 matLine> Shopping List</h3>
+        <mat-list-option *ngFor="let ingredient of ingredients" style="cursor: pointer;" >
+            <mat-divider></mat-divider>
+                <h4 mat-line>{{ingredient.name}} ({{ingredient.amount}})</h4>
+                <mat-divider></mat-divider>
+        </mat-list-option>
+    </mat-selection-list>
+    <mat-divider [vertical]="true"></mat-divider>
+    <app-shopping-edit fxFlex="40"></app-shopping-edit>
 </div>

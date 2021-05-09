@@ -1,7 +1,6 @@
-<div class="row">
-    <mat-grid-list cols=2 rowHeight="2:1">
-        <mat-grid-tile><app-recipe-list></app-recipe-list></mat-grid-tile>
-        <mat-grid-tile><app-recipe-details></app-recipe-details></mat-grid-tile>
-    </mat-grid-list>
 
+<div fxLayout="row" fxLayoutAlign="center center" fxFlex=100 fxLayoutGap="2em">
+    <app-recipe-list fxFlex="40"></app-recipe-list>
+    <mat-divider [vertical]="true"></mat-divider>
+    <app-recipe-details fxFlex="40"></app-recipe-details>
 </div>

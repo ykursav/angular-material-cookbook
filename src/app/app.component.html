@@ -1,8 +1,12 @@
-<app-header></app-header>
-<div class="container">
-  <mat-card-content>
-    <app-recipes></app-recipes>
-    <app-shopping-list></app-shopping-list>
-  </mat-card-content>
-</div>
+
+  <div fxLayout="column" fxLayoutAlign="space-around none" fxLayoutGap="2em">  
+    <app-header></app-header>
+    <div fxLayout="column" fxLayoutAlign="center stretch" fxFlex="100" fxLayoutGap="2em">
+      <app-recipes fxFlex="50"></app-recipes>
+      <div><hr></div>
+      <app-shopping-list fxFlex="50"></app-shopping-list>
+    </div>
+  </div>
+
+
 

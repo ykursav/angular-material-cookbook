@@ -1,1 +1,11 @@
+<button mat-raised-button color="primary">New Recipe</button>    
+<hr>
+<mat-selection-list [multiple]="false" #recipesList>
+    <mat-list-option *ngFor="let recipe of recipes" [value]="recipe">
+            <h4 mat-line>{{recipe.name}}</h4>
+            <p mat-line>{{recipe.description}}</p>
+            <img mat-list-avatar [src]="recipe.imagePath" alt="{{recipe.name}}">
+    </mat-list-option>
+</mat-selection-list>
+            
 <app-recipe-item></app-recipe-item>
